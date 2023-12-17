@@ -10,7 +10,7 @@ file_extensions:
 contexts:
   main: 
      - match: '\b(output|wrap|new|set|input|addition|subtraction|multiplication|division|equal|greater|less|equal_or_greater|equal_or_less|not|if|end-if|loop|end-loop)\b'
-       scope: keyword.control
+       scope: keyword.control.junlang
      - match: 'note'
        push: note
      - match: '"'
@@ -18,11 +18,11 @@ contexts:
   string:
      - meta_scope: string.quoted.double
      - match: '"'
-       scope: string.quoted.double
+       scope: string.quoted.double.junlang
        pop: true
      - match: \\.
-       scope: constant.character.escape
+       scope: constant.character.escape.junlang
   note:
-     - meta_scope: comment.line
+     - meta_scope: comment.line.junlang
      - match: '\n'
        pop: true
