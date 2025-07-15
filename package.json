@@ -6,12 +6,12 @@
 			"description": "A highlighting for JunLang.",
 			"author": "lemonorangeapple",
 			"homepage": "https://github.com/Jun-Software/JunLang_package",
-			"last_modified": "2023-12-14 18:06:59",
+			"last_modified": "2025-07-15 17:15:31",
 			"platforms": {
 				"*": [
 					{
-						"version": "1.0.0",
-						"url": "https://github.com/Jun-Software/JunLang_package/zipball/v1.0.0"
+						"version": "1.0.1",
+						"url": "https://github.com/Jun-Software/JunLang_package/zipball/v1.0.1"
 					}
 				]
 			}
