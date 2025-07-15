@@ -7,14 +7,19 @@ file_extensions:
   - jun
   - junlang
 
+variables:
+  ident: '[A-Za-z_][A-Za-z_0-9]*'
+
 contexts:
   main: 
-     - match: '\b(output|wrap|new|set|input|addition|subtraction|multiplication|division|equal|greater|less|equal_or_greater|equal_or_less|not|if|end-if|loop|end-loop)\b'
+     - match: '\b(output|wrap|set|input|addition|subtraction|multiplication|division|equal|greater|less|equal_or_greater|equal_or_less|not|if|end-if|loop|end-loop)\b'
        scope: keyword.control.junlang
      - match: 'note'
        push: note
      - match: '"'
        push: string
+     - match: '\b{{ident}}\b'
+       scope: variable.parameter.junlang
   string:
      - meta_scope: string.quoted.double
      - match: '"'
