@@ -12,9 +12,9 @@ variables:
 
 contexts:
   main: 
-     - match: '\b(output|wrap|set|input|addition|subtraction|multiplication|division|equal|greater|less|equal_or_greater|equal_or_less|not|if|end-if|loop|end-loop)\b'
+     - match: '\b(set|run|out|line|loop|load|in|if|func|end)\b'
        scope: keyword.control.junlang
-     - match: 'note'
+     - match: '#'
        push: note
      - match: '"'
        push: string
